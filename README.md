@@ -36,6 +36,9 @@ Requires Archipelago 0.6.4 or newer and the PC version of the game (EA app).
 Full guide: [setup guide](nfs_hpr/docs/setup_en.md) ·
 [game page](nfs_hpr/docs/en_Need%20for%20Speed%20Hot%20Pursuit%20Remastered.md)
 
+En français : [guide d'installation](nfs_hpr/docs/setup_fr.md) ·
+[page du jeu](nfs_hpr/docs/fr_Need%20for%20Speed%20Hot%20Pursuit%20Remastered.md)
+
 ## Options
 
 | Category | Option | What it does |

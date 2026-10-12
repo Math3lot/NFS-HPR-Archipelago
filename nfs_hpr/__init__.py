@@ -52,8 +52,17 @@ class NFSHotPursuitWeb(WebWorld):
             "setup_en.md",
             "setup/en",
             ["Math3lot"],
-        )
+        ),
+        Tutorial(
+            "Guide d'installation Multiworld",
+            "Un guide pour installer Need for Speed Hot Pursuit Remastered pour Archipelago.",
+            "Français",
+            "setup_fr.md",
+            "setup/fr",
+            ["Math3lot"],
+        ),
     ]
+    game_info_languages = ["en", "fr"]
     option_groups = option_groups
 
 
