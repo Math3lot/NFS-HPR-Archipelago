@@ -56,7 +56,7 @@ ne peut pas ouvrir le processus du jeu.
 
 Le jeu suit Archipelago : les épreuves et voitures que vous n'avez pas reçues sont retirées du
 jeu (absentes de la carte et du garage). Celles que vous recevez sont débloquées par le client,
-quelles que soient les conditions du jeu (bounty, épreuves précédentes). Les objets reçus en
+quelles que soient les conditions du jeu (prime, épreuves précédentes). Les objets reçus en
 cours de partie apparaissent une fois votre prochaine épreuve terminée (ou lancée puis quittée),
 car le jeu met ses déblocages à jour à ce moment-là. La logique en tient compte.
 
@@ -79,9 +79,9 @@ journal.
 
 ## Objets
 
-Les Bounty Bundles reçus sont ajoutés à la bounty du jeu pendant qu'il tourne (au camp qui est
+Les Bounty Bundles reçus sont ajoutés à la prime du jeu pendant qu'il tourne (au camp qui est
 en retard). Le client les rajoute à chaque lancement du jeu, car la sauvegarde ne garde que la
-bounty gagnée en épreuve.
+prime gagnée en épreuve.
 
 Les Nitro Refills reçus attendent que vous rouliez dans une épreuve (la jauge bouge), puis
 remplissent la jauge de nitro.
