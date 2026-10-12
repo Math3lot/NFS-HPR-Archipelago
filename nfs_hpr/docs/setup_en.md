@@ -8,7 +8,7 @@
 ## Installation
 
 1. Put `nfs_hpr.apworld` in the `custom_worlds` folder of your Archipelago install.
-2. Generate a template YAML from the Archipelago Launcher ("Generate Template Options").
+2. Make your YAML with the **Options Creator** in the Archipelago Launcher.
 3. Fill in your slot name and options, then generate as usual.
 
 ## Playing

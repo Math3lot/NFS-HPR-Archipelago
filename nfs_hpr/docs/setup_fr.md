@@ -9,8 +9,7 @@
 
 1. Mettez `nfs_hpr.apworld` dans le dossier `custom_worlds` de votre installation Archipelago
    (en général `C:\ProgramData\Archipelago\custom_worlds`).
-2. Créez un YAML modèle depuis l'Archipelago Launcher (« Generate Template Options »), ou
-   utilisez l'Options Creator.
+2. Créez votre YAML avec l'**Options Creator** de l'Archipelago Launcher.
 3. Remplissez votre nom de joueur et vos options, puis générez comme d'habitude.
 
 ## Avant de jouer : les sauvegardes

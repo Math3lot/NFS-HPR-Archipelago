@@ -28,8 +28,7 @@ ones are unlocked directly, and traps hit you while you drive.
 1. Download `nfs_hpr.apworld` from the [latest release](../../releases/latest).
 2. Put it in the `custom_worlds` folder of your Archipelago install
    (usually `C:\ProgramData\Archipelago\custom_worlds`).
-3. Open the Archipelago Launcher and use **Generate Template Options** (or the Options
-   Creator) to make your YAML.
+3. Open the Archipelago Launcher and use the **Options Creator** to make your YAML.
 
 Requires Archipelago 0.6.4 or newer and the PC version of the game (Steam or EA app).
 
