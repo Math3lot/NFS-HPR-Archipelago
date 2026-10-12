@@ -57,8 +57,7 @@ En français : [guide d'installation](nfs_hpr/docs/setup_fr.md) ·
 
 ## Quick start
 
-1. **Turn off cloud saves** for the game: in the EA app (game properties) and, for the Steam
-   version, in Steam too (game properties → General → Steam Cloud).
+1. **Turn off cloud saves** for the game in the EA app (game properties), Steam version included.
 2. With the game closed, open **Need for Speed Hot Pursuit Remastered Client** from the
    Launcher, connect to your slot, and type `/use_save new` to start a fresh career for this
    seed (your old career is kept as `original`).
