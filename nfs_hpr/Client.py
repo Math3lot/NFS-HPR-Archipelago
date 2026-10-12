@@ -553,7 +553,7 @@ def hide_locked_events(ctx: NFSHPRContext) -> None:
     """Make the game follow Archipelago: events and cars not received are kept out of the game
     (their unlock-tree nodes become unreachable); received ones are unlocked right away (they only
     need the side's first event). The game reads the tree when the career loads, so the client
-    must be connected before that; later changes show after the next event or career load."""
+    must be connected before that; later changes show once the city reloads (Free Drive or an event)."""
     if not (ctx.randomize_events or ctx.randomize_vehicles):
         return
     if not ctx.memory.tree_ok():
@@ -590,8 +590,11 @@ def hide_locked_events(ctx: NFSHPRContext) -> None:
     if ctx.randomize_events:
         newly_open += manage_first_events(ctx, received)
     for name in newly_open:
-        logger.info(f"Unlocked in game: {name}. It appears once you finish your next event "
-                    "(the game updates its unlocks at the end of each event).")
+        logger.info(f"Unlocked in game: {name}.")
+    if newly_open:
+        # the game only re-reads its unlocks when the city reloads
+        logger.info("To see it now: enter Free Drive and go back to the map "
+                    "(or finish or quit an event).")
     if not ctx.hidden_logged and (ctx.hidden_events or ctx.hidden_vehicles):
         ctx.hidden_logged = True
         events = sum(1 for v in ctx.hidden_events.values() if v == "hidden")

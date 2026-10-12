@@ -48,7 +48,8 @@ event holds ready is taken away too.
 The game follows Archipelago: connect the client before loading your career. Events and cars
 you have not received are kept out of the game (off the map, out of the garage). Received ones
 are unlocked by the client, whatever the game's own conditions (bounty, previous events). Items
-received during play show once you finish your next event (the game updates its unlocks then). The logic expects the same.
+received during play show once the city reloads: enter Free Drive and go back to the map, or finish
+(or quit) an event. The client reminds you when something new is unlocked.
 
 Locked events and cars: if you start an event Archipelago has not unlocked (its event item,
 or, when vehicles are randomized, its series item or the item of the car you picked has not

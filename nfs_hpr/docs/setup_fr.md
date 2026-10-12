@@ -57,8 +57,9 @@ ne peut pas ouvrir le processus du jeu.
 Le jeu suit Archipelago : les épreuves et voitures que vous n'avez pas reçues sont retirées du
 jeu (absentes de la carte et du garage). Celles que vous recevez sont débloquées par le client,
 quelles que soient les conditions du jeu (prime, épreuves précédentes). Les objets reçus en
-cours de partie apparaissent une fois votre prochaine épreuve terminée (ou lancée puis quittée),
-car le jeu met ses déblocages à jour à ce moment-là. La logique en tient compte.
+cours de partie apparaissent quand la ville se recharge : entrez en conduite libre (Free Drive)
+puis revenez à la carte, ou terminez (ou lancez puis quittez) une épreuve. Le client vous le
+rappelle quand quelque chose de nouveau est débloqué.
 
 Épreuves verrouillées : si vous lancez une épreuve qu'Archipelago n'a pas débloquée (objet de
 l'épreuve, ou, avec les voitures randomisées, objet de sa série ou de la voiture choisie non

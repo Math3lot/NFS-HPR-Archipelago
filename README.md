@@ -68,7 +68,8 @@ Useful commands: `/tracker`, `/saves`, `/use_save NAME`, `/checks`.
 
 - The client reads and writes the game's memory. Run it as administrator if it cannot open
   the game process.
-- Items received during an event show in game once you finish (or quit) your next event.
+- Events and cars received during play show once the city reloads: enter Free Drive and go back
+  to the map (or finish or quit an event).
 
 ## License
 
