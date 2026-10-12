@@ -1,0 +1,302 @@
+﻿# Q. What is this file?
+# A. This file contains options which allow you to configure your multiworld experience while allowing
+#    others to play how they want as well.
+#
+# Q. How do I use it?
+# A. The options in this file are weighted. This means the higher number you assign to a value, the
+#    more chances you have for that option to be chosen. For example, an option like this:
+#
+#    map_shuffle:
+#      on: 5
+#      off: 15
+#
+#    Means you have 5 chances for map shuffle to occur, and 15 chances for map shuffle to be turned
+#    off.
+#
+# Q. I've never seen a file like this before. What characters am I allowed to use?
+# A. This is a .yaml file. You are allowed to use most characters.
+#    To test if your yaml is valid or not, you can use this website:
+#        http://www.yamllint.com/
+#    You can also verify that your Archipelago options are valid at this site:
+#        https://archipelago.gg/check
+
+# Your name in-game, limited to 16 characters.
+#     {player} will be replaced with the player's slot number.
+#     {PLAYER} will be replaced with the player's slot number, if that slot number is greater than 1.
+#     {number} will be replaced with the counter value of the name.
+#     {NUMBER} will be replaced with the counter value of the name, if the counter value is greater than 1.
+name: Player{number}
+
+# Used to describe your yaml. Useful if you have multiple files.
+description: Default Need for Speed Hot Pursuit Remastered Template
+
+game: Need for Speed Hot Pursuit Remastered
+requires:
+  version: 0.6.9 # Version of Archipelago required for this yaml to work as expected.
+  game:
+    Need for Speed Hot Pursuit Remastered: 0.1.0 # Version of the world required for this yaml to work as expected.
+
+Need for Speed Hot Pursuit Remastered:
+  ################
+  # Game Options #
+  ################
+  progression_balancing:
+    # A system that can move progression earlier, to try and prevent the player from getting stuck and bored early.
+    # 
+    # A lower setting means more getting stuck. A higher setting means less getting stuck.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 99
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-99: 0 # random value between 0 and 99
+    disabled: 0 # equivalent to 0
+    normal: 50 # equivalent to 50
+    extreme: 0 # equivalent to 99
+
+  accessibility:
+    # Set rules for reachability of your items/locations.
+    # 
+    # **Full:** ensure everything can be reached and acquired.
+    # 
+    # **Minimal:** ensure what is needed to reach your goal can be acquired.
+    full: 50
+    minimal: 0
+
+  ########
+  # Goal #
+  ########
+  goal:
+    # What you need to do to win.
+    # all_gold_medals: Gold on all 78 Racer events and Distinction on all 63 Cop events.
+    # final_events: finish Seacrest Tour (Racer) and End Of The Line (Cop).
+    # level_20_both: reach level 20 as both Racer and Cop.
+    all_gold_medals: 0
+    final_events: 50
+    level_20_both: 0
+
+  #################
+  # Randomization #
+  #################
+  randomize_events:
+    # Events are items: an event is only on the map once you receive it.
+    # Off: events open as in the normal game. Medals are checks either way.
+    'false': 0
+    'true': 50
+
+  randomize_vehicles:
+    # Cars and series are items: a car is only in your garage once you receive it, and an event
+    # also needs its series and one of its cars. Preview and Gauntlet events need the car they lend.
+    # Off: cars and series unlock as in the normal game. Unlocking them is a check either way.
+    'false': 0
+    'true': 50
+
+  randomize_weapons:
+    # Each weapon is a progressive item (4 per weapon): without it the weapon has no charge, the
+    # first one gives the event's normal charges, each further one +1 charge.
+    # Off: weapons work as in the normal game.
+    'false': 0
+    'true': 50
+
+  randomize_levels:
+    # Reaching each Racer and Cop level (2 to 20) is a check.
+    'false': 0
+    'true': 50
+
+  #########
+  # Start #
+  #########
+  random_start:
+    # Each side starts with a random car, a random event that car can drive and that event's series.
+    # Off: you start with the Porsche Boxster Spyder and Roadsters Reborn (Racer), the Ford Crown
+    # Victoria and Chase 101 (Cop). Needs Randomize Events and Randomize Vehicles.
+    'false': 50
+    'true': 0
+
+  starting_events:
+    # Extra events you start with on each side, all drivable with your starting car (from the
+    # starting series). The normal start has only 1 such Racer event.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 8
+    3: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-8: 0 # random value between 0 and 8
+
+  #########
+  # Logic #
+  #########
+  bounty_multiplier:
+    # How much bounty the logic assumes you earn per event. 100 = what the normal game gives
+    # (medal reward plus bounty earned during the event), enough to unlock everything.
+    # Higher = harder: levels and bounty-locked cars are expected after fewer events, so you may
+    # need takedowns, near misses or replays to keep up.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 100
+    # Maximum value is 300
+    100: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-100-300: 0 # random value between 100 and 300
+
+  #########
+  # Traps #
+  #########
+  trap_percentage:
+    # Percentage of filler items replaced by traps. Each trap below has a weight: the higher, the
+    # more often it appears; 0 turns it off. With every trap at 0 there are no traps.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    20: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-100: 0 # random value between 0 and 100
+
+  flat_tire_weight:
+    # Flat Tire: damage, then the car spins out or skids. 0 = never.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 10
+    1: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-10: 0 # random value between 0 and 10
+
+  emp_impact_weight:
+    # EMP Impact: damage, the car loses most of its speed and is jolted sideways. 0 = never.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 10
+    1: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-10: 0 # random value between 0 and 10
+
+  speed_limiter_weight:
+    # Speed Limiter: speed capped at 72 km/h for 10 seconds. 0 = never.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 10
+    1: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-10: 0 # random value between 0 and 10
+
+  roadblock_weight:
+    # Roadblock: the car is stopped dead. 0 = never.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 10
+    1: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-10: 0 # random value between 0 and 10
+
+  system_jammed_weight:
+    # System Jammed: nitro drained and unusable for 10 seconds. 0 = never.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 10
+    1: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-10: 0 # random value between 0 and 10
+
+  reversed_steering_weight:
+    # Reversed Steering: left and right are swapped for 10 seconds. 0 = never.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 10
+    1: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-10: 0 # random value between 0 and 10
+
+  ##########
+  # Filler #
+  ##########
+  bounty_bundle_weight:
+    # Bounty Bundle filler (1,000 to 20,000 bounty, small amounts more common). 0 = never.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 10
+    3: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-10: 0 # random value between 0 and 10
+
+  nitro_refill_weight:
+    # Nitro Refill filler (Small to Full, small refills more common). 0 = never.
+    # If both filler weights are 0, Bounty Bundles are used.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 10
+    1: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-10: 0 # random value between 0 and 10
+
+  ###########################
+  # Item & Location Options #
+  ###########################
+  local_items:
+    # Forces these items to be in their native world.
+    []
+
+  non_local_items:
+    # Forces these items to be outside their native world.
+    []
+
+  start_inventory:
+    # Start with the specified amount of these items. Example: {Bomb: 1, Arrow: 3}
+    {}
+
+  start_hints:
+    # Start with these item's locations prefilled into the ``!hint`` command.
+    []
+
+  start_location_hints:
+    # Start with these locations and their item prefilled into the ``!hint`` command.
+    []
+
+  exclude_locations:
+    # Prevent these locations from having an important item.
+    []
+
+  priority_locations:
+    # Prevent these locations from having an unimportant item.
+    []
+
+  item_links:
+    # Share part of your item pool with other players.
+    []
+
+  plando_items:
+    # Generic items plando.
+    []
