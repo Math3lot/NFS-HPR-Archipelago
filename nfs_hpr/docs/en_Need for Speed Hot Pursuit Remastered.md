@@ -24,6 +24,9 @@ sets how many fillers become traps; each trap and each filler has its own weight
 
 ## How much bounty does the logic expect?
 
-`bounty_multiplier` (Bounty Expectation): 100 is the normal game's bounty rate, enough to
-unlock everything. Higher values expect more bounty per event, so levels and bounty-locked
-cars come into logic after fewer events.
+`bounty_multiplier` (Bounty Expectation): at 100 the logic only counts each event's medal
+reward, which every player earns; bounty from takedowns, near misses and drifts is extra margin.
+The highest levels and cars (beyond what all medals give) are only expected once every event of
+that side is done. Higher values expect more bounty per event, so levels and bounty-locked cars
+come into logic after fewer events. With vanilla cars, the game itself needs more bounty than the
+medals give, so 100 then counts the game's own rate.

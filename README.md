@@ -49,7 +49,7 @@ En français : [guide d'installation](nfs_hpr/docs/setup_fr.md) ·
 | | `randomize_levels` | Each level reached is a check |
 | Start | `random_start` | Random starting car, event and series on each side |
 | | `starting_events` | Extra events at the start (0–8, default 3) |
-| Logic | `bounty_multiplier` | Bounty Expectation: 100 = the normal game, higher = harder |
+| Logic | `bounty_multiplier` | Bounty Expectation: 100 = medal rewards only (safe), higher = harder |
 | Traps | `trap_percentage` | Share of filler replaced by traps |
 | | `*_weight` | Weight of each trap (0 = off) |
 | Filler | `bounty_bundle_weight`, `nitro_refill_weight` | Weight of each filler type |

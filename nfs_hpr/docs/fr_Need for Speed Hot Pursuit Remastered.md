@@ -26,6 +26,10 @@ type de remplissage a son propre poids (0 le désactive).
 
 ## Combien de bounty la logique attend-elle ?
 
-`bounty_multiplier` (Bounty Expectation) : 100 correspond au rythme de bounty du jeu normal,
-suffisant pour tout débloquer. Une valeur plus haute attend plus de bounty par épreuve : les
-niveaux et les voitures à bounty entrent dans la logique après moins d'épreuves.
+`bounty_multiplier` (Bounty Expectation) : à 100, la logique ne compte que la récompense de
+médaille de chaque épreuve, que tout joueur gagne ; la bounty des takedowns, near miss et drifts
+est une marge en plus. Les niveaux et voitures les plus hauts (au-delà de ce que donnent toutes
+les médailles) ne sont attendus qu'une fois toutes les épreuves du camp terminées. Une valeur plus
+haute attend plus de bounty par épreuve : les niveaux et voitures à bounty entrent dans la logique
+après moins d'épreuves. Avec les voitures non randomisées, le jeu lui-même demande plus de bounty
+que les médailles n'en donnent, donc 100 compte alors le rythme propre au jeu.

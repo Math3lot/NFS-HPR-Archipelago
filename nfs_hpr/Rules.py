@@ -145,8 +145,13 @@ _REQUIRED: Dict[bool, float] = {}
 
 
 def required_multiplier(vehicles_randomized: bool) -> float:
-    """Smallest bounty multiplier with which the game's own progression opens every event: medal
-    bounty alone is not enough (the game also pays bounty during events and for replays)."""
+    """Bounty per event (x its gold medal reward) the logic counts on at Bounty Expectation 100.
+    Randomized cars: the client unlocks received cars whatever the bounty, so the logic only counts
+    the medal reward, which every player earns (bounty earned during events comes on top).
+    Vanilla cars: the game itself locks cars behind bounty, so use the smallest multiplier with
+    which the game's own progression opens every event (medal bounty alone is not enough)."""
+    if vehicles_randomized:
+        return 1.0
     if vehicles_randomized not in _REQUIRED:
         multiplier = 1.0
         while any(game_progression(side, multiplier) < len(SIDES[side]["events"]) for side in SIDES):

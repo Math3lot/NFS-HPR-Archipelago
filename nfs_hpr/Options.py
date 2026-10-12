@@ -82,10 +82,14 @@ class StartingEvents(Range):
 
 class BountyMultiplier(Range):
     """
-    How much bounty the logic assumes you earn per event. 100 = what the normal game gives
-    (medal reward plus bounty earned during the event), enough to unlock everything.
+    How much bounty the logic assumes you earn per event, as a percentage of its medal reward.
+    100 = the medal reward only, which every player earns: bounty from takedowns, near misses and
+    drifts is extra margin. The highest levels and cars, beyond what all medals give, are only
+    expected once every event of that side is done.
     Higher = harder: levels and bounty-locked cars are expected after fewer events, so you may
-    need takedowns, near misses or replays to keep up.
+    need aggressive driving or replays to keep up.
+    (With vanilla cars, the game itself needs more bounty, so the logic counts the game's own
+    rate at 100.)
     """
     display_name = "Bounty Expectation"
     range_start = 100
