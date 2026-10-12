@@ -2,7 +2,7 @@
 
 ## Logiciels requis
 
-- Need for Speed Hot Pursuit Remastered (PC)
+- Need for Speed Hot Pursuit Remastered (PC, Steam ou EA app)
 - Archipelago 0.6.4 ou plus récent
 
 ## Installation
@@ -18,8 +18,9 @@
 Le jeu n'a qu'une seule carrière, donc le client garde une sauvegarde par seed, dans le dossier
 `nfs_hpr_saves` d'Archipelago.
 
-**Désactivez d'abord la sauvegarde dans le cloud** pour le jeu dans l'EA app (propriétés du
-jeu) : sinon l'EA app retélécharge votre ancienne carrière par-dessus la sauvegarde échangée.
+**Désactivez d'abord la sauvegarde dans le cloud** pour le jeu : dans l'EA app (propriétés du
+jeu) et, pour la version Steam, aussi dans Steam (propriétés du jeu → Général → Steam Cloud).
+Sinon votre ancienne carrière est retéléchargée par-dessus la sauvegarde échangée.
 
 Jeu fermé, dans le client :
 - `/use_save new` met de côté votre sauvegarde actuelle (la première fois sous le nom

@@ -31,7 +31,7 @@ ones are unlocked directly, and traps hit you while you drive.
 3. Open the Archipelago Launcher and use **Generate Template Options** (or the Options
    Creator) to make your YAML.
 
-Requires Archipelago 0.6.4 or newer and the PC version of the game (EA app).
+Requires Archipelago 0.6.4 or newer and the PC version of the game (Steam or EA app).
 
 Full guide: [setup guide](nfs_hpr/docs/setup_en.md) ·
 [game page](nfs_hpr/docs/en_Need%20for%20Speed%20Hot%20Pursuit%20Remastered.md)
@@ -57,7 +57,8 @@ En français : [guide d'installation](nfs_hpr/docs/setup_fr.md) ·
 
 ## Quick start
 
-1. **Turn off cloud saves** for the game in the EA app (game properties).
+1. **Turn off cloud saves** for the game: in the EA app (game properties) and, for the Steam
+   version, in Steam too (game properties → General → Steam Cloud).
 2. With the game closed, open **Need for Speed Hot Pursuit Remastered Client** from the
    Launcher, connect to your slot, and type `/use_save new` to start a fresh career for this
    seed (your old career is kept as `original`).

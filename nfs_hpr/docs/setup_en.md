@@ -2,7 +2,7 @@
 
 ## Required software
 
-- Need for Speed Hot Pursuit Remastered (PC)
+- Need for Speed Hot Pursuit Remastered (PC, Steam or EA app)
 - Archipelago 0.6.4 or newer
 
 ## Installation
@@ -76,5 +76,6 @@ Until the save in the game belongs to the seed you are connected to, the client 
 checks, so another career's progress is never sent by mistake.
 When you connect to a seed whose save is stored and the game is closed, the client swaps it
 in by itself (after storing the save that was there). Nothing is deleted without a copy.
-Turn off cloud saves for the game in the EA app (game properties) before using these
-commands: otherwise the EA app downloads your old career back over the swapped save.
+Turn off cloud saves for the game before using these commands: in the EA app (game
+properties) and, for the Steam version, in Steam too (game properties → General → Steam Cloud).
+Otherwise your old career is downloaded back over the swapped save.
